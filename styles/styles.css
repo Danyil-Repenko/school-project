@@ -2,17 +2,14 @@
   --color-of-headtext: #fff;
   --color-of-backg-head: #2c1320;
   --text-color: #042a2b;
+  --background-color: #f6f7eb;
 }
 
 .body {
   font-family: "Oswald", sans-serif;
-  background-color: #f6f7eb;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: 2px;
-  border-color: lightgrey;
+  background-color: lightgrey;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .headline {
   display: inline-block;
@@ -37,9 +34,10 @@
   margin-right: 15px;
   margin-bottom: 10px;
   color: var(--text-color);
+  background-color: var(--background-color);
 }
 
-nav {
+.nav {
   display: inline-block;
   margin-top: 15px;
   margin-left: 15px;
@@ -64,23 +62,27 @@ nav {
   background-color: var(--color-of-backg-head);
 }
 
-header .list {
+.list {
+  list-style-type: none;
+}
+
+.nav-list {
   list-style-type: circle;
   margin: 0;
 }
 
-header a {
+a {
   color: var(--text-color);
   text-decoration: none;
 }
 
-header a:hover,
-header a:focus {
+a:hover,
+a:focus {
   color: #797b84;
 }
 
-.list {
-  list-style-type: none;
+main {
+  background-color: var(--background-color);
 }
 
 main > .list {
