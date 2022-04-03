@@ -102,3 +102,8 @@ main > .list {
   padding: 5px;
   margin-top: 0;
 }
+
+.image {
+  margin: 15px;
+  float: right;
+}
