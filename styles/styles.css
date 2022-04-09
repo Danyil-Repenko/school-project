@@ -4,13 +4,30 @@
   --text-color: #042a2b;
   --background-color: #f6f7eb;
 }
+ul {
+  margin: 0;
+}
 
 .body {
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
-  background-color: lightgrey;
-  margin-left: 50px;
-  margin-right: 50px;
 }
+
+.section {
+  padding: 0 auto;
+  background-color: lightgrey;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  /*outline: 2px solid tomato;*/
+}
+
 .headline {
   display: inline-block;
   padding: 10px;
@@ -41,6 +58,7 @@
   display: inline-block;
   margin-top: 15px;
   margin-left: 15px;
+  margin-bottom: 15px;
   padding: 10px;
   border-top-style: none;
   border-left-style: solid;
@@ -81,10 +99,6 @@ a:focus {
   color: #797b84;
 }
 
-main {
-  background-color: var(--background-color);
-}
-
 main > .list {
   padding: 0;
   padding-bottom: 10px;
@@ -118,6 +132,7 @@ main > .list {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 footer {
